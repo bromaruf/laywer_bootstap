@@ -1,0 +1,383 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* header part css start */
+.ex_wide {
+    width: 78%;
+    margin: auto;
+}
+
+.nav-link {
+    color: #0b31a4;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 14px;
+    padding-right: 16px !important;
+    transition: .4s all ease-in-out;
+}
+
+.nav-link:hover {
+    color: #E65029;
+    transform: scale(1.1);
+}
+
+/* banner part css start */
+.banner {
+    background-image: url("/img/banner.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 91vh;
+    position: relative;
+}
+
+.ex_height {
+    min-height: 91vh;
+}
+
+.banner h1 {
+    text-align: center;
+    font-size: 80px;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.icon {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    color: white;
+    transform: translate(-50%);
+    animation-name: icon1;
+    animation-duration: .8s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes icon1 {
+    from {
+        top: 85%;
+    }
+
+    to {
+        top: 90%;
+    }
+}
+
+/* who we are part css */
+
+
+.who_we_are {
+    margin: 103px 0px;
+}
+
+.who_we_are span {
+    display: block;
+    height: 3px;
+    background: #e65029;
+    width: 50px;
+    margin: 10px;
+}
+
+.who_we_are h1 {
+    font-size: 45px;
+    font-weight: 600;
+    color: #28377E;
+    margin: 10px 0px;
+}
+
+.who_we_are p {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 28px;
+    margin: 10px 0px;
+}
+
+/* what we do part start */
+
+.what_we_do {
+    background: #F7F8F8;
+    padding: 70px 0px;
+    background-image: url('/img/sub.png');
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: 76%;
+}
+
+.what_we_do span {
+    display: block;
+    background: red;
+    height: 3px;
+    width: 54px;
+    margin: auto;
+}
+
+.what_we_do h1 {
+    text-align: center;
+    color: #28377e;
+    text-transform: uppercase;
+}
+
+.item {
+    position: relative;
+}
+
+.item img {
+    width: 100%;
+}
+
+.item h2 {
+    position: absolute;
+    left: 50%;
+    top: 52%;
+    color: white;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: .5s all ease-in-out;
+}
+
+.item i {
+    position: absolute;
+    left: 48%;
+    color: white;
+    transform: translate(-50%);
+    top: 80%;
+    opacity: 0;
+    transition: .5s all ease-in-out;
+}
+
+.item::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 0%;
+    width: 100%;
+    transition: .5s all ease-in-out;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#2e3b80+0,2e3b80+100&0+0,1+100 */
+    background: -moz-linear-gradient(top, rgba(46, 59, 128, 0) 0%, rgba(46, 59, 128, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(46, 59, 128, 0) 0%, rgba(46, 59, 128, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(46, 59, 128, 0) 0%, rgba(46, 59, 128, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#002e3b80', endColorstr='#2e3b80', GradientType=0);
+    /* IE6-9 */
+
+}
+
+.item:hover h2 {
+    opacity: 1;
+    top: 50%;
+}
+
+.item:hover i {
+    opacity: 1;
+    left: 50%;
+}
+
+.item:hover::before {
+    height: 100%;
+}
+
+/* our_attourneys css part start */
+.our_attourneys {
+    background-image: url('/img/our\ team\ bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 70px 0px;
+}
+
+.our_attourneys span {
+    display: block;
+    background: #f15927;
+    height: 4px;
+    margin: 10px 0px;
+    width: 100px;
+}
+
+.our_attourneys h2 {
+    font-size: 49px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.our_attourneys p {
+    color: white;
+    line-height: 30px;
+}
+
+.our_attourneys a {
+    text-decoration: none;
+    color: #f26929;
+    font-size: 19px;
+    text-transform: uppercase;
+}
+
+.our_item {
+    position: relative;
+}
+
+.our_item img {
+    width: 100%;
+}
+
+.our_item h2 {
+    position: absolute;
+    left: 50%;
+    top: 81%;
+    font-size: 21px;
+    color: white;
+    transform: translate(-90%, 17%);
+    opacity: 0;
+    transition: .5s all ease-in-out;
+}
+
+.our_item h2:hover {
+    opacity: 1;
+}
+
+.our_item::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 0%;
+    width: 100%;
+    transition: .5s all ease-in-out;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#2e3b80+0,2e3b80+100&0+0,1+100 */
+    background: -moz-linear-gradient(top, rgba(46, 59, 128, 0) 0%, rgba(46, 59, 128, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(46, 59, 128, 0) 0%, rgba(46, 59, 128, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(46, 59, 128, 0) 0%, rgba(46, 59, 128, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#002e3b80', endColorstr='#2e3b80', GradientType=0);
+    /* IE6-9 */
+
+}
+
+.our_item:hover::before {
+    height: 100%;
+}
+
+/* the_language_section part css start */
+.the_language_section {
+    padding: 80px;
+}
+
+.the_language_section span {
+    display: block;
+    height: 3px;
+    margin: auto;
+    width: 83px;
+    background: #f26929;
+}
+
+.the_language_section h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 30px 0px;
+    color: #323d96;
+}
+
+.the_language_section h5 {
+    color: #28377e;
+}
+
+.the_language_section p {
+    columns: #a48f8f;
+}
+
+.the_language_section a {
+    text-decoration: none;
+    color: #f26e03;
+}
+
+/* contact_design part css start */
+.contact_design {
+
+    background: #313c95;
+    padding: 80px 0px;
+}
+
+.contact_design span {
+    display: block;
+    height: 6px;
+    background: orange;
+    width: 109px;
+    margin: auto;
+}
+
+.contact_design h1 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 25px 0px;
+    color: white;
+}
+
+.form_design {}
+
+.form_design ::placeholder {
+    color: white !important;
+}
+
+.form_item {}
+
+#form_inside {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    border-radius: 0px;
+    padding: 16px 0px;
+}
+
+.btn_design {
+    width: 50%;
+    margin: auto;
+}
+
+.btn_inside {
+    background: #F2622C;
+    color: white;
+    padding: 12px 24px;
+    display: block;
+    margin: 35px auto;
+    width: 94%;
+    border-radius: 5px;
+}
+
+/* footer design part css  */
+
+footer {
+
+    padding: 19px 0px;
+
+    background: #0C1234;
+}
+
+footer p {
+    color: white;
+    line-height: 39px;
+}
+
+footer ul {}
+
+footer ul li {
+    list-style: none;
+    padding-left: 23px;
+}
+
+footer ul li a {
+    text-transform: none;
+    font-size: 23px;
+    color: white;
+}
